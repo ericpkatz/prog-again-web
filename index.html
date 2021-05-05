@@ -1,9 +1,22 @@
 <html>
   <head>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Profs Web - Again</h1>
+    <h1 id='h_1'>Profs Web - Again</h1>
+    <p id='p_1'>Here is some information</p>
     <h2>Some New Comments</h2>
     <h3>One More Set of Comments</h3>
+    <script>
+      const h1 = document.getElementById('h_1');
+      h1.addEventListener('click', function(){
+        const p1 = document.getElementByid('p_1');
+        p1.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
